@@ -1,0 +1,23 @@
+
+{
+    "quilleditorApp": {
+        "article" : {
+            "home": {
+                "title": "Articles",
+                "createLabel": "Article-ஐ உருவாக்கு",
+                "createOrEditLabel": "Article -ஐ மாற்று (அ) உருவாக்கு"
+            },
+            "created": "Article புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Article மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Article நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Article {{ id }}?"
+            },
+            "detail": {
+                "title": "Article"
+            },
+            "title": "Title",
+            "message": "Message"
+        }
+    }
+}
