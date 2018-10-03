@@ -20,6 +20,8 @@
                         [(ngModel)]="article.message" />
                 </div>
 
+                <ckeditor [(ngModel)]="article.message" [editor]="Editor" name="editor"></ckeditor>
+
             </div>
             <div>
                 <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
