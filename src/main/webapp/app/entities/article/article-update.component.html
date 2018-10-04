@@ -15,12 +15,12 @@
                         [(ngModel)]="article.title" />
                 </div>
                 <div class="form-group">
-                    <label class="form-control-label" jhiTranslate="quilleditorApp.article.message" for="field_message">Message</label>
-                    <input type="text" class="form-control" name="message" id="field_message"
-                        [(ngModel)]="article.message" />
-                </div>
+                    <label class="form-control-label" jhiTranslate="quilleditorApp.article.message" for="field_message1">Message</label>
+                    <!--<input type="text" class="form-control" name="message" id="field_message1"
+                        [(ngModel)]="article.message" />-->
 
-                <ckeditor [(ngModel)]="article.message" [editor]="Editor" name="editor"></ckeditor>
+                    <ckeditor [(ngModel)]="article.message" [editor]="Editor" name="message" id="field_message"></ckeditor>
+                </div>
 
             </div>
             <div>

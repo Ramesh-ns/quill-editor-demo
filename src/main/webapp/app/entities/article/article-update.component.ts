@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpResponse, HttpErrorResponse } from '@angular/common/http';
-import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Observable } from 'rxjs';
 
 import { IArticle } from 'app/shared/model/article.model';
 import { ArticleService } from './article.service';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
     selector: 'jhi-article-update',
@@ -14,7 +14,7 @@ import { ArticleService } from './article.service';
 export class ArticleUpdateComponent implements OnInit {
     private _article: IArticle;
     isSaving: boolean;
-    public Editor: ClassicEditor;
+    public Editor = ClassicEditor;
 
     constructor(private articleService: ArticleService, private activatedRoute: ActivatedRoute) {}
 

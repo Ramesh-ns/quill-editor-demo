@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { QuilleditorSharedModule } from 'app/shared';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { FormsModule } from '@angular/forms';
 import {
     ArticleComponent,
     ArticleDetailComponent,
@@ -16,7 +17,7 @@ import {
 const ENTITY_STATES = [...articleRoute, ...articlePopupRoute];
 
 @NgModule({
-    imports: [QuilleditorSharedModule, RouterModule.forChild(ENTITY_STATES), CKEditorModule],
+    imports: [QuilleditorSharedModule, RouterModule.forChild(ENTITY_STATES), CKEditorModule, FormsModule],
     declarations: [
         ArticleComponent,
         ArticleDetailComponent,
